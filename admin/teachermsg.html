@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta http-equiv="Cache-Control" content="no-siteapp">
+		<title>老师资料管理</title>
+		<!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5shiv.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/H-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/H-ui.admin.css">
+		<link rel="stylesheet" type="text/css" href="css/skin.css" id="skin">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont1.css">
+		<!--[if IE 6]>
+<script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+	</head>
+
+	<body>
+		<header class="navbar-wrapper">
+			<div class="navbar navbar-fixed-top">
+				<div class="container-fluid cl">
+					<a class="logo navbar-logo f-l mr-10 hidden-xs"></a>
+					<nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs text-c">
+						
+						<ul class="cl">
+							<li class="dropDown dropDown_hover">
+								<a href="#" class="dropDown_A"><i class="iconfont icon-iconfontyonghutouxiang2"></i>李明</a>
+								<ul class="dropDown-menu menu radius box-shadow">
+									<li>
+										<a href="javascript:;" onClick="myselfinfo()">个人信息</a>
+									</li>
+									<li>
+										<a href="#">切换账户</a>
+									</li>
+									<li>
+										<a href="#">退出</a>
+									</li>
+								</ul>
+							</li>
+							<li><a>超级管理员</a></li>
+							<li><a>e学院</a></li>
+							<li><a href="#"><i class="iconfont icon-yingyong"></i></a></li>
+							<li class="right"><a><i class="iconfont icon-fanhui"></i></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<aside class="Hui-aside">
+			<div class="menu_dropdown bk_2">
+				<dl>
+					<dt><i class="iconfont icon-fenzu"></i>&nbsp;一级菜单<i class="iconfont menu_dropdown-arrow icon-cemianjiantou"></i></dt>
+					<dd>
+						<ul>
+							<li>
+								<a href="addstudent.html" data-title="添加学生">添加学生</a>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><i class="iconfont icon-fenzu"></i>&nbsp;一级菜单<i class="iconfont menu_dropdown-arrow icon-cemianjiantou"></i></dt>
+					<dd>
+						<ul>
+							<li>
+								<a data-href="picture-list.html" data-title="图片管理" href="javascript:void(0)">图片管理</a>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><i class="iconfont icon-fenzu"></i>&nbsp;<span>一级菜单</span><i class="iconfont menu_dropdown-arrow icon-cemianjiantou"></i></dt>
+					<dd>
+						<ul>
+							<li>
+								<a data-href="product-brand.html" data-title="品牌管理" href="javascript:void(0)">品牌管理</a>
+							</li>
+							<li>
+								<a data-href="product-category.html" data-title="分类管理" href="javascript:void(0)">分类管理</a>
+							</li>
+							<li>
+								<a data-href="product-list.html" data-title="产品管理" href="javascript:void(0)">产品管理</a>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt><i class="iconfont icon-fenzu"></i>&nbsp;一级菜单</dt>
+				</dl>
+			</div>
+		</aside>
+		<div class="dislpayArrow hidden-xs">
+			<a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a>
+		</div>
+		<section class="Hui-article-box">
+			<div class="page-container">
+				<nav>
+					<span>老师资料管理</span>
+				</nav>
+
+				<div class="HuiTab">
+					<div class="cl pd-5">
+						<span class="r">
+							<a href="" class="btn btn-primary radius"><i class="Hui-iconfont"></i> 添加</a>
+						</span>
+					</div>
+						<!--<table class="table table-border table-hover table-bg" role="grid">
+							<thead>
+								<tr class="text-c" role="row">
+									<th><input type="checkbox" name="" value=""></th>
+									<th>姓名</th>
+									<th>账号</th>
+									<th>性别</th>
+									<th>邮件</th>
+									<th>电话</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+
+								<tr class="text-c odd" role="row">
+									<td><input type="checkbox" value="1" name=""></td>
+									<td>张三</td>
+									<td>admin</td>
+									<td>男</td>
+									<td>admin@mail.com</td>
+									<td>123456</td>
+									<td>
+										<a href="javascript:;" class="btn btn-primary radius">修改资料</a>
+										<a href="javascript:;" class="btn btn-danger radius">删除</a>
+									</td>
+								</tr>
+								<tr class="text-c even" role="row">
+									<td><input type="checkbox" value="1" name=""></td>
+									<td>微微威武</td>
+									<td>admin</td>
+									<td>男</td>
+									<td>admin@mail.com</td>
+									<td>123456</td>
+									<td>
+										<a href="javascript:;" class="btn btn-primary radius">修改资料</a>
+										<a href="javascript:;" class="btn btn-danger radius">删除</a>
+									</td>
+								</tr>
+								<tr class="text-c odd" role="row">
+									<td><input type="checkbox" value="1" name=""></td>
+									<td>张三</td>
+									<td>admin</td>
+									<td>男</td>
+									<td>admin@mail.com</td>
+									<td>123456</td>
+									<td>
+										<a href="javascript:;" class="btn btn-primary radius">修改资料</a>
+										<a href="javascript:;" class="btn btn-danger radius">删除</a>
+									</td>
+								</tr>
+								<tr class="text-c even" role="row">
+									<td><input type="checkbox" value="1" name=""></td>
+									<td>啦啦啦啦</td>
+									<td>admin</td>
+									<td>男</td>
+									<td>admin@mail.com</td>
+									<td>123456</td>
+									<td>
+										<a href="javascript:;" class="btn btn-primary radius">修改资料</a>
+										<a href="javascript:;" class="btn btn-danger radius">删除</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>-->
+
+						<!-- component template -->
+						<script type="text/x-template" id="grid-template">
+							<table class="table table-border table-hover table-bg" role="grid">
+								<thead>
+								<tr class="text-c" role="row">
+									<th><input type="checkbox" name="" value=""></th>
+									<th>姓名</th>
+									<th>账号</th>
+									<th>性别</th>
+									<th>邮件</th>
+									<th>电话</th>
+									<th>操作</th>
+								</tr>
+								</thead>
+								<tbody>
+									<tr v-for="entry in filteredData" class="text-c even" role="row">
+										<td><input type="checkbox" value="1" name=""></td>
+										<td v-for="key in columns">
+											{{entry[key]}}
+										</td>
+									<td>
+										<a href="javascript:;" class="btn btn-primary radius">修改资料</a>
+										<a href="javascript:;" class="btn btn-danger radius">删除</a>
+									</td>										
+									</tr>
+								</tbody>
+							</table>
+						</script>
+
+						<!-- demo root element -->
+						<div class="dataTables_wrapper" id="demo">
+							<demo-grid :data="gridData" :columns="gridColumns" :filter-key="searchQuery">
+							</demo-grid>
+						</div>
+				</div>
+						
+				<div class="dataTables_wrapper">
+					<div class="dataTables_paginate">
+						<a class="paginate_button previous disabled">上一页</a>
+						<span><a class="paginate_button current">1</a></span>
+						<span><a class="paginate_button">2</a></span>
+						<span><a class="paginate_button">3</a></span>
+						<span><a class="paginate_button">4</a></span>
+						<a class="paginate_button next disabled">下一页</a>
+					</div>
+				</div>		
+		</section>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/H-ui.admin.js"></script>
+		<script type="text/javascript" src="js/H-ui.min.js"></script>
+		<script src="js/vue.js"></script>
+		<script>
+			// register the grid component
+			Vue.component('demo-grid', {
+				template: '#grid-template',
+				props: {
+					data: Array,
+					columns: Array,
+					filterKey: String
+				},
+				data: function() {
+					var sortOrders = {}
+					this.columns.forEach(function(key) {
+						sortOrders[key] = 1
+					})
+					return {
+						sortKey: '',
+						sortOrders: sortOrders
+					}
+				},
+				computed: {
+					filteredData: function() {
+						var sortKey = this.sortKey
+						var filterKey = this.filterKey && this.filterKey.toLowerCase()
+						var order = this.sortOrders[sortKey] || 1
+						var data = this.data
+						if(filterKey) {
+							data = data.filter(function(row) {
+								return Object.keys(row).some(function(key) {
+									return String(row[key]).toLowerCase().indexOf(filterKey) > -1
+								})
+							})
+						}
+						if(sortKey) {
+							data = data.slice().sort(function(a, b) {
+								a = a[sortKey]
+								b = b[sortKey]
+								return(a === b ? 0 : a > b ? 1 : -1) * order
+							})
+						}
+						return data
+					}
+				},
+				filters: {
+					capitalize: function(str) {
+						return str.charAt(0).toUpperCase() + str.slice(1)
+					}
+				},
+				methods: {
+					sortBy: function(key) {
+						this.sortKey = key
+						this.sortOrders[key] = this.sortOrders[key] * -1
+					}
+				}
+			})
+
+			// bootstrap the demo
+			var demo = new Vue({
+				el: '#demo',
+				data: {
+					//搜索查询
+					searchQuery: '',
+					gridColumns: ['姓名', '账号', '性别', '邮件', '电话'],
+					gridData: [{
+						姓名: 'Chuck Norris',
+						账号: '1',
+						性别: '2',
+						邮件: '3',
+						电话: '4'
+					}, {
+						姓名: 'Chuck Norris',
+						账号: '1',
+						性别: '2',
+						邮件: '3',
+						电话: '4'
+					}, {
+						姓名: 'Chuck Norris',
+						账号: '1',
+						性别: '2',
+						邮件: '3',
+						电话: '4'
+					}, {
+						姓名: 'Chuck Norris',
+						账号: '1',
+						性别: '2',
+						邮件: '3',
+						电话: '4'
+					}]
+				}
+			})
+		</script>
+	</body>
+
+</html>

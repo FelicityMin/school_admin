@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* 首页 */
+.navbar .logo {
+    width: 220px;
+    height: 60px;
+    background: url(../img/EZServices.jpg) no-repeat 0 center;
+    background-size: contain;
+}
+.icon-iconfontyonghutouxiang2{
+	font-size: 32px !important;
+    margin-right: 10px;
+    color: rgb(181,181,183);
+    vertical-align: middle;
+}
+.icon-fenzu {
+    color: #fff;
+    margin-right: 10px;
+    vertical-align: middle;    
+}
+.icon-cemianjiantou{
+	transition-duration:0.3s ;
+	transition-property:all;
+	float: right;
+}
+.icon-vip{
+	color: #fff;
+}
+.sectionrow {
+    margin:100px auto 20px auto;
+    width: 80%;
+}
+.sectionrow .col-4{
+    display: inline-block;
+    float: left;
+    border: 1px solid #eee;
+    margin: 0 3%;
+    width: 360px;
+    height: 100px;
+    padding: 0;
+    margin-bottom: 80px;
+}
+.sectionrow .pull-left{
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	float: left;
+	background: #0077B3;
+}
+.sectionrow .pull-right{
+    width: 258px;
+    height: 100px;
+	display: inline-block;
+	float: left;
+    text-align: center;	
+}
+.sectionrow .pull-left i{
+    font-size: 46px;
+    padding: 0 27px;
+    line-height: 92px;
+}
+.sectionrow .pull-right p{
+	margin: 15px 0;
+    color: rgb(0,183,255);
+}
+.sectionrow .pull-right h3{
+	margin: 13px 0;
+	padding: 0;
+}
+
+/* 添加学生 */
+
+.bluetitle{
+	color: #3395f6;
+	font-size: 18px;
+}
+.blueword{
+	color: #3295f3;	
+}
+.page-container nav{
+	line-height: 30px;
+}
+.accound-bund{
+	border: 1px solid #ccc;
+    display: inline-block;
+    width: 100%;
+}
+.accound-bund li{
+    padding: 5px 10px;
+}
+.bund-class{
+    padding-left: 8px;
+    color: #363636;
+    border-left: 2px solid #0098cd;
+}
+.HuiTab{
+	margin-top: 10px;
+	border: 1px solid #ccc;
+    min-height: 612px;	
+}
+.input-files {
+    border: solid 1px #ddd;
+    width: 73%;
+}
+.bigcheck{
+	height: 18px;
+	margin: 0 !important;
+	width: 18px;
+}
+.shangchuan{
+    margin: 39px auto;
+    display: block;
+    width: 100px;
+}
+/*调班*/
+.table-4{
+	display: inline-table;
+	width: 24.8%;
+	border-right: 1px solid #ddd;
+}
+.table-4:last-child{
+	border-right: 0;
+}
+/*试卷作答明细*/
+.dataTables_wrapper table tr td img{
+	max-width: 60px;
+}
